@@ -19,14 +19,15 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 4vh 2vw;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     z-index: 10000;
 }
 
 header .logo {
+    position: absolute;
     color: #fff;
     font-weight: 700;
     text-decoration: none;
@@ -35,33 +36,50 @@ header .logo {
     letter-spacing: 2px;
 }
 
-header ul {
+header div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2vh 2vw;
+
+    /* position: absolute;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px; */
+}
+
+header div ul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header ul li {
+
+
+header div ul li {
     list-style: none;
     margin-left: 20px;
 }
 
-header ul li a {
+header div ul li a {
     text-decoration: none;
     padding: 6px 15px;
     color: #fff;
     border-radius: 20px;
 }
 
-header ul li a:hover,
-header ul li a.active {
+header div ul li a:hover,
+header div ul li a.active {
     background: #fff;
     color: #2b1055;
 }
 
 section {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     padding: 100px;
     display: flex;
@@ -102,7 +120,8 @@ section img#mountains_front {
     right: -350px;
     color: #fff;
     white-space: nowrap;
-    font-size: 7.5vw;
+    font-size: 5em;
+    /* font-size: 7.5vw; */
     z-index: 9;
 }
 
@@ -134,3 +153,55 @@ section img#mountains_front {
     font-size: 1.2em;
     color: #fff;
 }
+
+.topnav a.icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav ul li a {
+        display: none;
+    }
+
+    .topnav ul li a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #text {
+        right: -450px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* .topnav.responsive ul li a {
+        position: relative;
+    } */
+
+    .topnav.responsive ul li a.icon {
+        background: #fff;
+        color: #2b1055;
+        float: right;
+    }
+
+    
+    /* header .logo {
+        position: absolute;
+    } */
+    
+    .topnav.responsive ul li a {
+        float: none;
+        display: block;
+    }
+
+    .sec {
+        padding: 10vw;
+    }
+    /* header div ul li a.active {
+        background: #2b1055;
+        color: #fff;
+    } */
+}
+
