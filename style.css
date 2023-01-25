@@ -21,7 +21,6 @@ header {
     width: 100%;
     padding: 4vh 2vw;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     z-index: 10000;
 }
@@ -38,17 +37,7 @@ header .logo {
 
 header div {
     position: absolute;
-    top: 0;
     right: 0;
-    padding: 2vh 2vw;
-
-    /* position: absolute;
-    color: #fff;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px; */
 }
 
 header div ul {
@@ -164,7 +153,6 @@ section img#mountains_front {
     }
 
     .topnav ul li a.icon {
-        float: right;
         display: block;
     }
 }
@@ -176,21 +164,14 @@ section img#mountains_front {
 }
 
 @media screen and (max-width: 600px) {
-    /* .topnav.responsive ul li a {
-        position: relative;
-    } */
 
     .topnav.responsive ul li a.icon {
+
         background: #fff;
         color: #2b1055;
         float: right;
     }
 
-    
-    /* header .logo {
-        position: absolute;
-    } */
-    
     .topnav.responsive ul li a {
         float: none;
         display: block;
@@ -198,10 +179,18 @@ section img#mountains_front {
 
     .sec {
         padding: 10vw;
+        
     }
-    /* header div ul li a.active {
-        background: #2b1055;
-        color: #fff;
-    } */
+
+    header {
+        padding: 2vh 2vw;
+        align-items: unset;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    header {
+        padding: 8vh 2vw;
+    }
 }
 
