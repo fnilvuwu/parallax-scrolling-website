@@ -1,2 +1,2 @@
 # parallax-scrolling-website
-A Parallex Website
+A CV with Parallax Scrolling Effect
