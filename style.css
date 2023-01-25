@@ -8,6 +8,10 @@
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
 body {
     min-height: 100vh;
     overflow-x: hidden;
@@ -128,15 +132,26 @@ section img#mountains_front {
 
 .sec {
     position: relative;
-    padding: 100px;
+    padding: 200px;
     background: #1c0522;
+
 }
 
 .sec h2 {
     font-size: 3.5em;
     margin-bottom: 10px;
     color: #fff;
+    text-align: center;
+
 }
+
+.sec h3 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #fff;
+}
+
 
 .sec p {
     font-size: 1.2em;
@@ -145,6 +160,37 @@ section img#mountains_front {
 
 .topnav a.icon {
     display: none;
+}
+
+#contact {
+    text-align: center;
+    align-items: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    padding: 15px;
+}
+
+.content {
+    padding: 15px;
+}
+
+p {
+    padding-top: 15px;
+}
+
+#work {
+    align-items: center;
+    text-align: center;
+}
+
+#about {
+    text-align: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -159,7 +205,15 @@ section img#mountains_front {
 
 @media screen and (max-width: 900px) {
     #text {
-        right: -450px;
+        right: -500px;
+    }
+    #work {
+        align-items: center;
+        text-align: center;
+    }
+
+    #about {
+        text-align: center;
     }
 }
 
@@ -186,6 +240,10 @@ section img#mountains_front {
         padding: 2vh 2vw;
         align-items: unset;
     }
+
+
+
+
 }
 
 @media screen and (max-height: 600px) {
